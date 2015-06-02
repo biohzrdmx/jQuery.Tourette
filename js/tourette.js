@@ -64,6 +64,7 @@
 			},
 			start: function() {
 				var obj = this;
+				obj.position = 0;
 				// Check for a valid landmark
 				if ( typeof obj.tour.landmarks[obj.position] !== 'undefined' ) {
 					// Get the first landmark
