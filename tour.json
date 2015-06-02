@@ -1,0 +1,71 @@
+{
+	"name":"Sample tour",
+	"author":"biohzrdmx",
+	"landmarks":[
+		{
+			"name":"welcome",
+			"title":"Components",
+			"contents":"<p>Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.</p>",
+			"element":null,
+			"actions":[
+				{
+					"text":"Continue",
+					"action":"Tourette.next"
+				}
+			]
+		},
+		{
+			"name":"navbar",
+			"title":"This is a navbar",
+			"contents":"<p>Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</p>",
+			"element":".navbar-default",
+			"forceBelow":true,
+			"actions":[
+				{
+					"text":"Continue",
+					"action":"Tourette.next"
+				},
+				{
+					"text":"Open dropdown",
+					"action":"openDropdown"
+				}
+			]
+		},
+		{
+			"name":"list-group",
+			"title":"List groups",
+			"contents":"<p>List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.</p>",
+			"element":".list-group-1",
+			"actions":[
+				{
+					"text":"Continue",
+					"action":"Tourette.next"
+				}
+			]
+		},
+		{
+			"name":"linked-items",
+			"title":"Linked items",
+			"contents":"<p>Linkify list group items by using anchor tags instead of list items (that also means a parent &lt;div&gt; instead of an &lt;ul&gt;). No need for individual parents around each element.</p>",
+			"element":".list-group-2",
+			"actions":[
+				{
+					"text":"Continue",
+					"action":"Tourette.next"
+				}
+			]
+		},
+		{
+			"name":"progress-bar",
+			"title":"Progress bar",
+			"contents":"<p>Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.</p>",
+			"element":".progress",
+			"actions":[
+				{
+					"text":"I'm ready",
+					"action":"Tourette.hide"
+				}
+			]
+		}
+	]
+}

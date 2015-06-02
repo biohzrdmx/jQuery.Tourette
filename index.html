@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tourette</title>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/tourette.css">
+</head>
+<body>
+	<div class="container">
+		<h2>Tourette</h2>
+		<p>Meet Tourette. An advanced tour engine for web apps.</p>
+		<!--  -->
+		<h3>Why Tourette?</h3>
+		<p>From Wikipedia:</p>
+		<div class="well"><em>&quot;Tourette syndrome [...] is an inherited neuropsychiatric disorder with onset in childhood, characterized by multiple physical (motor) tics and at least one vocal (phonic) tic. These tics characteristically wax and wane, can be suppressed temporarily, and are preceded by a premonitory urge. Tourette's is defined as part of a spectrum of tic disorders, which includes provisional, transient and persistent (chronic) tics.&quot;</em></div>
+		<!--  -->
+		<p>And this plugin provides a solid platform for page <strong>tours</strong>...</p>
+		<p>...that show you some elements and can trigger <strong>automated events</strong> (open menus, tick checkboxes, fill text areas, etc), effectively <strong>taking control</strong> of the browser...</p>
+		<p>...so Tourette is darn good name!</p>
+		<!--  -->
+		<h3>Simple demo</h3>
+		<p>Below are some Bootstrap widgets, click the 'Start Tour' button to see what Tourette does!</p>
+		<div class="well text-center">
+			<a href="#" class="btn btn-lg btn-success btn-start">Start Tour</a>
+		</div>
+		<!--  -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Brand</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Link</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+								<li class="divider"></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Link</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<!--  -->
+		<div class="row">
+			<div class="col-sm-6">
+				<ul class="list-group list-group-1">
+					<li class="list-group-item">Cras justo odio</li>
+					<li class="list-group-item">Dapibus ac facilisis in</li>
+					<li class="list-group-item">Morbi leo risus</li>
+					<li class="list-group-item">Porta ac consectetur ac</li>
+					<li class="list-group-item">Vestibulum at eros</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="list-group list-group-2">
+					<a href="#" class="list-group-item">Cras justo odio</a>
+					<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+					<a href="#" class="list-group-item">Morbi leo risus</a>
+					<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+					<a href="#" class="list-group-item">Vestibulum at eros</a>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+		<div class="progress">
+			<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+				<span class="sr-only">0% Complete</span>
+			</div>
+		</div>
+		<!--  -->
+		<h3>How to use</h3>
+		<p>Did you see that in action? That was awesome!</p>
+		<p>But how do you create your own tours?</p>
+		<p>It's pretty simple. First make sure to include jQuery (1.8+ would do) and both Tourette's JS and CSS files</p>
+		<p><strong>CSS</strong></p>
+		<p><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/tourette.css&quot;&gt;</code></p>
+		<p><strong>JS</strong></p>
+		<p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;</code></p>
+		<p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;js/tourette.js&quot;&gt;&lt;/script&gt;</code></p>
+		<p>Then build your great web app or web site, you just need some markup to play with.</p>
+		<p>And here's the interesting part: <em>create your tour definition file</em></p>
+		<h4>The tour definition file</h4>
+		<p>This is the 'map' to your landmarks: each landmark represents an stop in the tour and can be related to a page element.</p>
+		<p>The basic structure of a tour is a very simple JSON:</p>
+		<pre>{
+	"name":"Sample tour",
+	"author":"Your name, email, etc",
+	"landmarks":[]
+}</pre>
+		<p>As you may have guessed, <code>landmarks</code> will hold each of our tour stops, based on the following structure:</p>
+		<pre>{
+	"name":"landmark-name",
+	"title":"Landmark Title",
+	"contents":"The text to be shown on the prompt, it may include HTML tags, just try to keep it simple and concise.",
+	"element":".element-selector",
+	"actions":[]
+}</pre>
+		<p>Landmarks may have a related page element or not: you can put <code>null</code> on <code>element</code> or a jQuery selector to match the desired element.</p>
+		<p>And then come the actions. Each prompt can hace one or more buttons to navigate the tour or to trigger custom events/interactions.</p>
+		<p>Actions are defined by the following structure:</p>
+		<pre>{
+	"text":"Button text",
+	"cssClass":".button-class",
+	"action":"Button.action"
+}</pre>
+		<p>Tourette comes with some predefined <code>actions</code>:</p>
+		<ul>
+			<li><code>Tourette.next</code> Jump to the next landmark</li>
+			<li><code>Tourette.prev</code> Jump to the previous landmark</li>
+			<li><code>Tourette.show</code> Show the first landmark</li>
+			<li><code>Tourette.hide</code> Quit the tour</li>
+		</ul>
+		<p>If you want to do other things, you may put a custom action name and use it through the <code>onButton</code> callback. More on this below.</p>
+		<p>If you want to use custom classes on each button, fill the <em>optional</em> <code>cssClass</code> item.</p>
+		<!--  -->
+		<h4>Loading and running the tour</h4>
+		<p>Once you have your tour definition ready you will need to initialize Tourette:</p>
+		<pre>var tourette = $.Tourette({ /* options */ }); // Construct a new Tourette object</pre>
+		<p>Then just load your tour file and start the tour. Is that easy!</p>
+		<pre>$.ajax({
+	url: 'tour.json',
+	dataType: 'json',
+	success: function(response) {
+		tourette.load(response);
+		tourette.start();
+	}
+});</pre>
+		<!--  -->
+		<h4>Constructor options</h4>
+		<p>You may customize the markup of Tourette elements as well as specify callbacks to know when something happens:</p>
+		<ul>
+			<li><code>overlayMarkup</code> The overlay markup, defaults to <code>&lt;div class=&quot;tourette-overlay&quot;&gt;&lt;/div&gt;</code></li>
+			<li><code>promptMarkup</code> The prompt markup, defaults to <code>&lt;div class=&quot;tourette-prompt&quot;&gt;&lt;/div&gt;</code></li>
+			<li><code>buttonMarkup</code> The button markup, defaults to <code>&lt;a href=&quot;#&quot; class=&quot;tourette-button&quot;&gt;&lt;/a&gt;</code></li>
+			<li><code>onShow</code> onShow callback (see the next section)</li>
+			<li><code>onHide</code> onHide callback (see the next section)</li>
+			<li><code>onStart</code> onStart callback (see the next section)</li>
+			<li><code>onExit</code> onExit callback (see the next section)</li>
+			<li><code>onButton</code> onButton callback (see the next section)</li>
+		</ul>
+		<p>For example, to use Bootstrap buttons you may do:</p>
+		<pre>var tourette = $.Tourette({
+	buttonMarkup: '&lt;a href=&quot;#&quot; class=&quot;tourette-button btn btn-primary&quot;&gt;&lt;/a&gt;'
+});
+</pre>
+		<!--  -->
+		<h4>Callbacks</h4>
+		<p>Tourette has an useful set of callbacks that will help you to create awesome page tours easily:</p>
+		<p><code>onShow(landmark)</code></p>
+		<p>Called when the prompt is shown<br>
+			Receives the current <code>landmark</code> object</p>
+		<p><code>onHide(landmark)</code></p>
+		<p>Called when the prompt is hidden<br>
+			Receives the current <code>landmark</code> object</p>
+		<p><code>onStart(landmark)</code></p>
+		<p>Called when the tour is started<br>
+			Receives the current <code>landmark</code> object</p>
+		<p><code>onExit(landmark)</code></p>
+		<p>Called when the tour has ended<br>
+			Receives the current <code>landmark</code> object</p>
+		<p><code>onButton(landmark, action, button)</code></p>
+		<p>Called when a button with a custom action is clicked<br>
+			Receives the current <code>landmark</code>, <code>action</code> and <code>button</code> objects</p>
+		<p>To receive callbacks, just pass an options object to the Tourette constructor:</p>
+		<pre>var tourette = $.Tourette({
+	onExit: function(landmark) {
+		alert('You just ended the tour');
+	}
+});</pre>
+		<h3>Troubleshooting</h3>
+		<p>Tourette <em>should work</em> on major, modern browsers and has some mobile support. I've tested it on Firefox and Chrome/Opera. Internet Explorer should do fine, but it may have weird bugs.</p>
+		<p>TL;DR version, use a modern browser and you should be fine.</p>
+		<p>However, if you've found a bug, please open an issue. Or better yet, fix it and send me a pull request :)</p>
+		<h3>Credits</h3>
+        <p><strong>Lead coder:</strong> biohzrdmx <a href="http://github.com/biohzrdmx">&lt;github.com/biohzrdmx&gt;</a></p>
+
+        <h3>License</h3>
+        <p>The MIT License (MIT)</p>
+        <p>Copyright (c) 2015 biohzrdmx</p>
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+        <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+        <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+	</div>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/tourette.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			var tourette = $.Tourette({
+				buttonMarkup: '<a href="#" class="tourette-button btn btn-primary"></a>',
+				onShow: function(landmark) {
+					console.log('onShow', arguments);
+					switch (landmark.name) {
+						case 'linked-items':
+							setTimeout(function() {
+								$('a.list-group-item').eq(2).addClass('active');
+							}, 2000);
+							break;
+						case 'progress-bar':
+							$('.progress-bar').css({ width: 0 });
+							setTimeout(function() {
+								$('.progress-bar').css({ width: '100%' });
+							}, 2000);
+							break;
+					}
+				},
+				onHide: function(landmark) {
+					console.log('onHide', arguments);
+					switch (landmark.name) {
+						case 'navbar':
+							$('.dropdown').first().removeClass('open');
+							break;
+						case 'linked-items':
+							$('a.list-group-item').eq(2).removeClass('active');
+							break;
+						case 'progress-bar':
+							$('.progress-bar').css({ width: 0 });
+							break;
+					}
+				},
+				onStart: function(landmark) {
+					console.log('onStart', arguments);
+				},
+				onExit: function(landmark) {
+					console.log('onExit', arguments);
+				},
+				onButton: function(landmark, action, button) {
+					console.log('onButton', arguments);
+					switch (landmark.name) {
+						case 'navbar':
+							var dropdown = $('.dropdown').first();
+							if ( dropdown.hasClass('open') ) {
+								dropdown.removeClass('open');
+								tourette.moveToElement( $(landmark.element) );
+								button.text('Open dropdown');
+							} else {
+								dropdown.addClass('open');
+								tourette.moveToElement(dropdown.find('.dropdown-menu'));
+								button.text('Close dropdown');
+							}
+							break;
+					}
+				}
+			});
+			$.ajax({
+				url: 'tour.json',
+				dataType: 'json',
+				success: function(response) {
+					tourette.load(response);
+				}
+			});
+			$('.btn-start').on('click', function(e) {
+				e.preventDefault();
+				tourette.start();
+			});
+		});
+	</script>
+</body>
+</html>
