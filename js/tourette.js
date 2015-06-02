@@ -1,5 +1,11 @@
-(function($) {
-	// What does the tourette plugin do?
+/**
+* jQuery Tourette
+* @author biohzrdmx <github.com/biohzrdmx>
+* @version 1.0
+* @requires jQuery 1.8+
+* @license MIT
+*/
+;(function($) {
 	$.Tourette = function(options) {
 		var tourette = {
 			tour: null,
