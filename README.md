@@ -2,6 +2,8 @@
 
 Meet Tourette. An advanced tour engine for web apps.
 
+[Live demo](http://biohzrdmx.github.io/jQuery.Tourette/)
+
 ### Why Tourette?
 
 From Wikipedia:
